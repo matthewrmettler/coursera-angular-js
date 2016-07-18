@@ -1,6 +1,11 @@
 week-1/conFusion/bower_components
 
-week-2/conFusion/bower_components
-week-2/conFusion/node_modules
-week-2/conFusion/dist
-week-2/conFusion/.tmp
+week-2/conFusion-gulp/bower_components
+week-2/conFusion-gulp/node_modules
+week-2/conFusion-gulp/dist
+week-2/conFusion-gulp/.tmp
+
+week-2/conFusion-grunt/bower_components
+week-2/conFusion-grunt/node_modules
+week-2/conFusion-grunt/dist
+week-2/conFusion-grunt/.tmp
