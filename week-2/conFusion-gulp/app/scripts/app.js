@@ -14,7 +14,7 @@ angular.module('confusionApp', []).controller('MenuController', ['$scope', funct
       description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
       comment: ''
     },
-    
+
     {
       name:'Zucchipakoda',
       image: 'images/zucchipakoda.png',
@@ -24,7 +24,7 @@ angular.module('confusionApp', []).controller('MenuController', ['$scope', funct
       description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
       comment: ''
     },
-    
+
     {
       name:'Vadonut',
       image: 'images/vadonut.png',
@@ -34,7 +34,7 @@ angular.module('confusionApp', []).controller('MenuController', ['$scope', funct
       description:'A quintessential ConFusion experience, is it a vada or is it a donut?',
       comment: ''
     },
-    
+
     {
       name:'Elai Cheese Cake',
       image: 'images/elaicheesecake.png',
@@ -44,21 +44,21 @@ angular.module('confusionApp', []).controller('MenuController', ['$scope', funct
       description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
       comment: ''
     }
-  ]; 
-  
+  ];
+
   $scope.dishes = dishes;
 
 
   $scope.toggleDetails = function() {
       $scope.showDetails = !$scope.showDetails;
   };
-  
+
   $scope.select = function(setTab) {
     $scope.tab = setTab;
-    
+
     if (setTab === 2) {
       $scope.filtText = "appetizer";
-    } 
+    }
     else if (setTab === 3) {
       $scope.filtText = "mains";
     }
@@ -69,8 +69,14 @@ angular.module('confusionApp', []).controller('MenuController', ['$scope', funct
       $scope.filtText = "";
     }
   };
-  
+
   this.isSelected = function (checkTab) {
     return ($scope.tab === checkTab);
   };
+}]).controller('ContactController', ['$scope', function($scope) {
+
+            $scope.feedback = {mychannel:"", firstName:"", lastName:"",
+                               agree:false, email:"" };
+}]).controller('FeedbackController', ['$scope', function($scope) {
+
 }]);
